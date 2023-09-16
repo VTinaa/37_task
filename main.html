@@ -4,34 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacman</title>
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <canvas id="pacmanCanvas" width="200" height="200"></canvas>
+    
 
-    <script>
-        const canvas = document.getElementById("pacmanCanvas");
-        const context = canvas.getContext("2d");
-
-        // Функція для малювання Пакмена
-        function drawPacman() {
-            context.beginPath();
-            context.arc(100, 100, 40, 0.2 * Math.PI, 1.8 * Math.PI);
-            context.lineTo(100, 100);
-            context.fillStyle = "yellow";
-            context.fill();
-            context.closePath();
-
-            // Додатковий код для очей Пакмена
-            context.beginPath();
-            context.arc(95, 80, 5, 0, 2 * Math.PI);
-            // context.arc(115, 80, 5, 0, 2 * Math.PI);
-            context.fillStyle = "black";
-            context.fill();
-            context.closePath();
-        }
-
-        // Виклик функції для малювання Пакмена
-        drawPacman();
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
